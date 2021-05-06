@@ -1,0 +1,14 @@
+<h1>School Class Edit Form</h1>
+<%= form_for @school_class do |f| %>
+    <%= f.label :title %>
+    <br>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.label :room_number %>
+    <br>
+    <%= f.number_field :room_number %>
+    <br>
+    <%= f.submit %>
+<% end %>
+<br>
+<%= link_to 'back to class', school_class_path(@school_class) %>
